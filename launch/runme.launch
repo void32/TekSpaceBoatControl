@@ -1,0 +1,7 @@
+<launch>
+	<!-- node pkg="turtlesim" name="turtlesim_nodez" type="turtlesim_node"/-->
+	<node pkg="joy" name="joyz" type="joy_node"/>
+	<!-- node pkg="boat_controller" name="boadcontroller" type="ctrl.py" / -->
+	<node pkg="boat_controller" name="serial_controller" type="serial_boat_gp.py" output="screen"/> 
+</launch>
+
